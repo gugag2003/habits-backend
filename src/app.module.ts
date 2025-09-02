@@ -12,12 +12,12 @@ import { Habit } from './entities/habit.entity';
  */
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'sqlite',
-      database: 'db.sqlite',
-      entities: [User, Habit],
-      synchronize: true,
-    }),
+TypeOrmModule.forRoot({
+  type: 'better-sqlite3',
+  database: 'db.sqlite',
+  entities: [User, Habit],
+  synchronize: true,
+}),
     HabitsModule,
   ],
 })
