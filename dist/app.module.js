@@ -19,7 +19,7 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             typeorm_1.TypeOrmModule.forRoot({
-                type: 'sqlite',
+                type: 'better-sqlite3',
                 database: 'db.sqlite',
                 entities: [user_entity_1.User, habit_entity_1.Habit],
                 synchronize: true,
